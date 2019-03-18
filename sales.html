@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sales</h1>
+  <script>
+  //Math.floor(Math.random() * (maxCustomers - minCustomers)) + minCustomers;
+
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+
+// location 1 ------------------------------------------------------
+
+var pike = {
+  storeName: '1st and Pike',
+  minCustomers: 23,
+  maxCustomers: 65,
+  avgCookies: 6.3,
+  customersEachHour: [],
+  cookiesEachHour: [],
+  totalCookies: 0,
+  calculateHourlyCustomers: function() {
+    for (var i = 0; i < hours.length; i++) {
+    this.customersEachHour.push(Math.floor(Math.random() * (this.maxCustomers - this.minCustomers)) + this.minCustomers);
+    }
+  },
+
+  calculateCookiesEachHour: function() {
+    for (var i = 0; i < hours.length; i++)  {
+      this.cookiesEachHour.push(this.customersEachHour[i] * this.avgCookies);
+    }
+  },
+
+  calcTotalCookies: function() {
+    for (var i = 0; i < hours.length; i++) {
+      this.totalCookies += this.cookiesEachHour[i];
+    }
+  },
+
+
+  render: function() {
+    this.calculateHourlyCustomers();
+    this.calculateCookiesEachHour();
+    this.calcTotalCookies();
+
+
+    var header = document.createElement('h2');
+    header.textContent = this.storeName;
+    document.body.appendChild(header);
+
+    var list = document.createElement('ul');
+    document.body.appendChild(list);
+    for (var i = 0; i < hours.length; i++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = hours[i] + ': ' + Math.round(this.cookiesEachHour[i]);
+      list.appendChild(listItem);
+    }
+
+    var listTotal = document.createElement('li');
+    listTotal.textContent = 'Total: ' + Math.round(this.totalCookies);
+    list.appendChild(listTotal);
+  }
+};
+
+pike.render();
+
+// location 2 ------------------------------------------------------
+
+
+
+// location 3 ------------------------------------------------------
+
+
+
+// location 4 ------------------------------------------------------
+
+
+
+// location 5 ------------------------------------------------------
+
+
+
+  </script>
+</body>
+</html>
