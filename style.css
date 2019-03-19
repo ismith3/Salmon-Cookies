@@ -1,3 +1,8 @@
+.index {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 ul li {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,7 +12,45 @@ h1 {
 h2 {
   font-family: "Playfair Display", 'Times New Roman', Times, serif;
 }
+.rainbow {
+  background-image: linear-gradient(to left, violet, #0083ff, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 h3 {
   font-family: "Sniglet";
-  
+  position: absolute;
+}
+div h3:nth-child(1) {
+  right: 200px;
+}
+div h3:nth-child(2) {
+  left: 30px;
+}
+div h3:nth-child(3) {
+  top: 200px;
+  left: 100px;
+}
+div h3:nth-child(4) {
+  top: 350px;
+  left: 150px;
+}
+div h3:nth-child(5) {
+  top: 200px;
+  right: 100px;
+}
+div h3:nth-child(6) {
+  top: 350px;
+  right: 150px;
+}
+div h3:nth-child(7) {
+  top: 400px;
+  left: 45%;
+}
+a {
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: black;
 }
