@@ -10,6 +10,24 @@
 </head>
 <body>
   <h1>Projected Daily Cookie Sales</h1>
+    <form id="new-location-form">
+      <fieldset>
+      <label for="store">Store Name:</label>
+      <input type="text" name="store" id="storeInput" value=""><br>
+
+      <label for="minCustomers">Minimum customers per hour:</label>
+      <input type="number" name="min" id="minCustomers" value=""><br>
+
+      <label for="maxCustomers">Maximum customers per hour:</label>
+      <input type="number" name="max" id="maxCustomers" value=""><br>
+
+      <label for="cookies">Avg Cookies per Customer:</label>
+      <input type="text" name="cookies" id="cookieInput" value=""><br>
+
+      <input type="submit">
+    </fieldset>
+    </form>
+  <br>
   <table id="table">
     <tr>
       <th>Store</th>
