@@ -53,8 +53,15 @@ a {
   left: 0px;
   top: 0px;
 }
-td {
+td, th {
   border: 1px solid black;
-  padding: 5px;
+  padding: 5px 10px;
   text-align: center;
+}
+input {
+  display: block;
+}
+fieldset {
+  width: 220px;
+  padding: 15px;
 }
