@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+}
+
+header, section, footer {
+  padding: 100px;
+}
+
+ul li {
+  list-style-type: none;
+}
