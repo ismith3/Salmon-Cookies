@@ -2,10 +2,28 @@ html, body {
   margin: 0;
 }
 
-header, section, footer {
-  padding: 100px;
+h1, section, footer {
+  padding: 120px;
+  margin: 0;
 }
 
 ul li {
   list-style-type: none;
+}
+
+header {
+  background-image: url("/images/family.jpg");
+  background-size: 4500px;
+  background-repeat: no-repeat;;
+  background-position-y: -650px;
+  background-position-x: -800px;
+  width: 100%;
+}
+section, div, h3 {
+  background: white;
+  display: block;
+}
+.half {
+  float: left;
+  width: 50%;
 }
