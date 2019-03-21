@@ -16,13 +16,15 @@ header {
   background-size: 4500px;
   background-repeat: no-repeat;;
   background-position-y: -650px;
-  background-position-x: -800px;
+  background-position-x: -600px;
   width: 100%;
 }
+
 section, div, h3 {
   background: white;
   display: block;
 }
+
 .half {
   float: left;
   width: 50%;
