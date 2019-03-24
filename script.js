@@ -73,11 +73,29 @@ function total() {
     }
 
     var footCell = document.createElement('th');
+
     footCell.textContent = collumnTotal;
+    footCell.className = 'cellIndex';
     footRow.appendChild(footCell);
     collumnTotal = 0;
   }
 }
+
+function newTotal() {
+  for (var i = 0; i < hours.length; i++) {
+    for (var j = 0; j < stores.length; j++) {
+      collumnTotal = collumnTotal + stores[j].cookiesEachHour[i];
+    }
+
+    var totalArray = document.getElementsByClassName('cellIndex');
+    for (var k = 0; k < totalArray.length; k++) {
+      var index = totalArray[i];
+      index.textContent = collumnTotal;
+    }
+    collumnTotal = 0;
+  }
+}
+
 
 // Form input and store creation
 
@@ -95,7 +113,7 @@ function handleForm(e) {
   e.target.min.value = '';
   e.target.max.value = '';
   e.target.cookies.value = '';
-  total();
+  newTotal();
 }
 
 document.getElementById('new-location-form').addEventListener('submit', handleForm);
