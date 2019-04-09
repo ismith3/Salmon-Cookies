@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, footer {
+  padding: 100px;
+  margin: 0;
+}
+
+a {
+  color: white;
+  font-Family: "Oswald";
+  text-decoration: none;
+}
+
+a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  padding: 150px;
+  font-family: "Yellowtail";
+  color: #222;
+}
+
+.gray {
+  background: #efefef;
+}
+
+h3 {
+  font-family: "Oswald";
+  color: #333;
+}
+
+p {
+  font-family: "Playfair Display";
+  color: #333;
+}
+
+section {
+  padding: 40px 80px;
+  height: 300px;
+}
+
+ul {
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+nav {
+  position: fixed;
+  left: -25px;
+  width: calc(100% + 25px);
+  margin: 0;
+  padding: 10px 0;
+  background: #333;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: ;
+  border: 1px solid transparent;
+  color: white;
+  font-family: "Oswald";
+}
+
+nav ul li:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+nav ul li.left {
+  float: left;
+}
+nav ul li.right {
+  float: right;
+  margin: 0 15px 0 0;
+}
+header {
+  background: #efefef;
+  height: 300px;
+}
+
+section, div, h3 {
+  background: white;
+  display: block;
+}
+
+.third {
+  float: left;
+  width: 33%;
+}
+.two-thirds {
+  float: right;
+  width: 66%;
+}
+footer {
+  text-align: center;
+}

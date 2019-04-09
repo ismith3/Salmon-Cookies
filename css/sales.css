@@ -1,0 +1,18 @@
+h1 {
+  font-family: "Playfair Display", 'Times New Roman', Times, serif;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+input {
+  display: block;
+}
+
+fieldset {
+  width: 220px;
+  padding: 15px;
+}
